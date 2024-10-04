@@ -26,10 +26,20 @@ struct ContentView: View {
             //strings.append("mode_switch_polygon")
             //strings.append("mode_switch_jelly")
             
+            MeasureTool.framedConvertibleBuildAsset(prefix: "framed", name: "menu_a")
+            MeasureTool.framedConvertibleBuildAsset(prefix: "framed", name: "menu_b")
+            MeasureTool.framedConvertibleBuildAsset(prefix: "framed", name: "menu_c")
+            
+            MeasureTool.looseConvertibleBuildAsset(prefix: "loose", name: "menu_a")
+            MeasureTool.looseConvertibleBuildAsset(prefix: "loose", name: "menu_b")
+            MeasureTool.looseConvertibleBuildAsset(prefix: "loose", name: "menu_c")
+            
+            
             //MeasureTool.mainTabBuildAsset(prefix: "mode_switch", name: "check_box_check")
             //MeasureTool.mainTabBuildAsset(prefix: "mode_switch", name: "check_box_square")
             
-            MeasureTool.FramedConvertibleBuildAsset(prefix: "sexy_check", name: "jiggles")
+            //MeasureTool.FramedConvertibleBuildAsset(prefix: "sexy_check", name: "jiggles")
+            
             
             //MeasureTool.sexyButtonBuildAsset(prefix: "sexy_button", name: "delete")
             //MeasureTool.sexyButtonBuildAsset(prefix: "sexy_button", name: "zoom_jiggle")

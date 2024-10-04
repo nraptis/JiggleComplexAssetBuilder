@@ -12,7 +12,7 @@
 		E8D93C7A2C7E7423005FBD97 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8D93C792C7E7423005FBD97 /* Preview Assets.xcassets */; };
 		E8D93C902C7E7488005FBD97 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D93C822C7E7488005FBD97 /* ContentView.swift */; };
 		E8D93C912C7E7488005FBD97 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D93C832C7E7488005FBD97 /* Device.swift */; };
-		E8D93C922C7E7488005FBD97 /* MeasureTool+ExportAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D93C842C7E7488005FBD97 /* MeasureTool+ExportAsset.swift */; };
+		E8D93C922C7E7488005FBD97 /* MeasureTool+Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D93C842C7E7488005FBD97 /* MeasureTool+Asset.swift */; };
 		E8D93C932C7E7488005FBD97 /* MeasureTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D93C852C7E7488005FBD97 /* MeasureTool.swift */; };
 		E8D93C942C7E7488005FBD97 /* FileUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D93C862C7E7488005FBD97 /* FileUtils.swift */; };
 		E8D93C952C7E7488005FBD97 /* Orientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D93C872C7E7488005FBD97 /* Orientation.swift */; };
@@ -29,7 +29,7 @@
 		E8D93C7B2C7E7423005FBD97 /* JiggleComplexAssetBuilder.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JiggleComplexAssetBuilder.entitlements; sourceTree = "<group>"; };
 		E8D93C822C7E7488005FBD97 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E8D93C832C7E7488005FBD97 /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
-		E8D93C842C7E7488005FBD97 /* MeasureTool+ExportAsset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MeasureTool+ExportAsset.swift"; sourceTree = "<group>"; };
+		E8D93C842C7E7488005FBD97 /* MeasureTool+Asset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MeasureTool+Asset.swift"; sourceTree = "<group>"; };
 		E8D93C852C7E7488005FBD97 /* MeasureTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeasureTool.swift; sourceTree = "<group>"; };
 		E8D93C862C7E7488005FBD97 /* FileUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileUtils.swift; sourceTree = "<group>"; };
 		E8D93C872C7E7488005FBD97 /* Orientation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Orientation.swift; sourceTree = "<group>"; };
@@ -75,7 +75,7 @@
 				E8D93C862C7E7488005FBD97 /* FileUtils.swift */,
 				E8D93C8C2C7E7488005FBD97 /* IconPackSlice.swift */,
 				E8D93C852C7E7488005FBD97 /* MeasureTool.swift */,
-				E8D93C842C7E7488005FBD97 /* MeasureTool+ExportAsset.swift */,
+				E8D93C842C7E7488005FBD97 /* MeasureTool+Asset.swift */,
 				E8D93C872C7E7488005FBD97 /* Orientation.swift */,
 				E8D93C882C7E7488005FBD97 /* Scale.swift */,
 				E8D93C762C7E7423005FBD97 /* Assets.xcassets */,
@@ -167,7 +167,7 @@
 				E8D93C902C7E7488005FBD97 /* ContentView.swift in Sources */,
 				E8D93C942C7E7488005FBD97 /* FileUtils.swift in Sources */,
 				E8D93C932C7E7488005FBD97 /* MeasureTool.swift in Sources */,
-				E8D93C922C7E7488005FBD97 /* MeasureTool+ExportAsset.swift in Sources */,
+				E8D93C922C7E7488005FBD97 /* MeasureTool+Asset.swift in Sources */,
 				E8D93C732C7E7422005FBD97 /* JiggleComplexAssetBuilderApp.swift in Sources */,
 				E8D93C952C7E7488005FBD97 /* Orientation.swift in Sources */,
 				E8D93C962C7E7488005FBD97 /* Scale.swift in Sources */,

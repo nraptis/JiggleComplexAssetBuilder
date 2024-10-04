@@ -1,0 +1,18 @@
+{
+	"images": [
+		{
+			"filename": "framed_menu_c_pad_2l_light_disabled_1_0.png",
+			"idiom": "ipad",
+			"scale": "1x"
+		},
+		{
+			"filename": "framed_menu_c_pad_2l_light_disabled_2_0.png",
+			"idiom": "ipad",
+			"scale": "2x"
+		}
+	],
+	"info": {
+		"author": "nraptis",
+		"version": 1
+	}
+}
