@@ -29,9 +29,10 @@ struct ContentView: View {
             //MeasureTool.mainTabBuildAsset(prefix: "mode_switch", name: "check_box_check")
             //MeasureTool.mainTabBuildAsset(prefix: "mode_switch", name: "check_box_square")
             
+            MeasureTool.FramedConvertibleBuildAsset(prefix: "sexy_check", name: "jiggles")
             
-            MeasureTool.sexyButtonBuildAsset(prefix: "sexy_button", name: "zoom_reset")
-            MeasureTool.sexyButtonBuildAsset(prefix: "sexy_button", name: "zoom_jiggle")
+            //MeasureTool.sexyButtonBuildAsset(prefix: "sexy_button", name: "delete")
+            //MeasureTool.sexyButtonBuildAsset(prefix: "sexy_button", name: "zoom_jiggle")
             
             //MeasureTool.sexyButtonBuildAsset(prefix: "sexy_button", name: "menu")
             //MeasureTool.sexyButtonBuildAsset(prefix: "sexy_button", name: "rotate_left")
@@ -171,8 +172,4 @@ struct ContentView: View {
             */
         }
     }
-}
-
-#Preview {
-    ContentView()
 }

@@ -66,6 +66,17 @@ struct IconSet {
 
 class MeasureTool {
     
+    static func FramedConvertibleBuildAsset(prefix: String, name: String) {
+        let classifications = FramedConvertibleClassifications()
+        let scales = getScales()
+        let asset = getAsset(prefix: prefix,
+                             name: name,
+                             classifications: classifications,
+                             scales: scales)
+        export(asset: asset)
+        FramedConvertibleLogAsset(prefix: prefix, name: name, asset: asset)
+    }
+    
     static func sexyButtonBuildAsset(prefix: String, name: String) {
         let classifications = sexyButtonClassifications()
         let scales = getScales()
@@ -111,15 +122,15 @@ class MeasureTool {
                             pages.append(page)
                         } else {
                             print("[[ BAD IMAGE ]] @ \(fileName) from \(name)")
-                            exit(0)
+                            //exit(0)
                         }
                     } else {
                         print("[[ BAD FILE DATA ]] @ \(fileName) from \(name)")
-                        exit(0)
+                        //exit(0)
                     }
                 } else {
                     print("[[ BAD FILE PATH ]] @ \(fileName) from \(name)")
-                    exit(0)
+                    //exit(0)
                 }
             }
             let iconSetFileName = prefix + "_" + name + "_" + classification.nameComponent
@@ -131,6 +142,50 @@ class MeasureTool {
         }
         return Asset(iconSets: iconSets,
                      name: prefix + "_" + name)
+    }
+    
+    static func FramedConvertibleClassifications() -> [Classification] {
+        let classifications: [Classification] = [
+            .pad0LinesDark,
+            .phoneLandscape0LinesDark,
+            .phonePortrait0LinesDark,
+            .pad0LinesLight,
+            .phoneLandscape0LinesLight,
+            .phonePortrait0LinesLight,
+            .pad0LinesDarkDisabled,
+            .phoneLandscape0LinesDarkDisabled,
+            .phonePortrait0LinesDarkDisabled,
+            .pad0LinesLightDisabled,
+            .phoneLandscape0LinesLightDisabled,
+            .phonePortrait0LinesLightDisabled,
+            
+            .pad1LineDark,
+            .phoneLandscape1LineDark,
+            .phonePortrait1LineDark,
+            .pad1LineLight,
+            .phoneLandscape1LineLight,
+            .phonePortrait1LineLight,
+            .pad1LineDarkDisabled,
+            .phoneLandscape1LineDarkDisabled,
+            .phonePortrait1LineDarkDisabled,
+            .pad1LineLightDisabled,
+            .phoneLandscape1LineLightDisabled,
+            .phonePortrait1LineLightDisabled,
+            
+            .pad2LinesDark,
+            .phoneLandscape2LinesDark,
+            .phonePortrait2LinesDark,
+            .pad2LinesLight,
+            .phoneLandscape2LinesLight,
+            .phonePortrait2LinesLight,
+            .pad2LinesDarkDisabled,
+            .phoneLandscape2LinesDarkDisabled,
+            .phonePortrait2LinesDarkDisabled,
+            .pad2LinesLightDisabled,
+            .phoneLandscape2LinesLightDisabled,
+            .phonePortrait2LinesLightDisabled,
+        ]
+        return classifications
     }
     
     static func sexyButtonClassifications() -> [Classification] {
@@ -339,7 +394,96 @@ static var \(variableName): MainTabIconPack {
         
     }
     
-    
+    static func FramedConvertibleLogAsset(prefix: String,
+                                 name: String,
+                                 asset: Asset) {
+        
+        guard let iconSetPad_0 = asset.getIconSet(classification: .pad0LinesDark) else {
+                    fatalError("iconSetPad_0 doesn't exist")
+                }
+                
+                guard let iconSetPad_1 = asset.getIconSet(classification: .pad1LineDark) else {
+                    fatalError("iconSetPad_1 doesn't exist")
+                }
+                
+                guard let iconSetPad_2 = asset.getIconSet(classification: .pad2LinesDark) else {
+                    fatalError("iconSetPad_2 doesn't exist")
+                }
+                
+                guard let iconSetPhoneLandscape_0 = asset.getIconSet(classification: .phoneLandscape0LinesDark) else {
+                    fatalError("iconSetPhoneLandscape_0 doesn't exist")
+                }
+                
+                guard let iconSetPhoneLandscape_1 = asset.getIconSet(classification: .phoneLandscape1LineDark) else {
+                    fatalError("iconSetPhoneLandscape_1 doesn't exist")
+                }
+                
+                guard let iconSetPhoneLandscape_2 = asset.getIconSet(classification: .phoneLandscape2LinesDark) else {
+                    fatalError("iconSetPhoneLandscape_2 doesn't exist")
+                }
+                
+                guard let iconSetPhonePortrait_0 = asset.getIconSet(classification: .phonePortrait0LinesDark) else {
+                    fatalError("iconSetPhonePortrait_0 doesn't exist")
+                }
+                
+                guard let iconSetPhonePortrait_1 = asset.getIconSet(classification: .phonePortrait1LineDark) else {
+                    fatalError("iconSetPhonePortrait_1 doesn't exist")
+                }
+                
+                guard let iconSetPhonePortrait_2 = asset.getIconSet(classification: .phonePortrait2LinesDark) else {
+                    fatalError("iconSetPhonePortrait_2 doesn't exist")
+                }
+        
+        let widthPad_0 = iconSetPad_0.getWidth1()
+        let heightPad_0 = iconSetPad_0.getHeight1()
+        
+        let widthPhonePortrait_0 = iconSetPhonePortrait_0.getWidth1()
+        let heightPhonePortrait_0 = iconSetPhonePortrait_0.getHeight1()
+        
+        let widthPhoneLandscape_0 = iconSetPhoneLandscape_0.getWidth1()
+        let heightPhoneLandscape_0 = iconSetPhoneLandscape_0.getHeight1()
+        
+        let widthPad_1 = iconSetPad_1.getWidth1()
+        let heightPad_1 = iconSetPad_1.getHeight1()
+        
+        let widthPhonePortrait_1 = iconSetPhonePortrait_1.getWidth1()
+        let heightPhonePortrait_1 = iconSetPhonePortrait_1.getHeight1()
+        
+        let widthPhoneLandscape_1 = iconSetPhoneLandscape_1.getWidth1()
+        let heightPhoneLandscape_1 = iconSetPhoneLandscape_1.getHeight1()
+        
+        let widthPad_2 = iconSetPad_2.getWidth1()
+        let heightPad_2 = iconSetPad_2.getHeight1()
+        
+        let widthPhonePortrait_2 = iconSetPhonePortrait_2.getWidth1()
+        let heightPhonePortrait_2 = iconSetPhonePortrait_2.getHeight1()
+        
+        let widthPhoneLandscape_2 = iconSetPhoneLandscape_2.getWidth1()
+        let heightPhoneLandscape_2 = iconSetPhoneLandscape_2.getHeight1()
+        
+        let variableName = snakeToCamel(string: name)
+        
+        let output = """
+static var \(variableName): FramedConvertibleIconPack {
+    Self.build(prefix: "\(prefix)",
+              name: "\(name)",
+              widthPad_0: \(widthPad_0), heightPad_0: \(heightPad_0),
+              widthPhoneLandscape_0: \(widthPhoneLandscape_0), heightPhoneLandscape_0: \(heightPhoneLandscape_0),
+              widthPhonePortrait_0: \(widthPhonePortrait_0), heightPhonePortrait_0: \(heightPhonePortrait_0),
+              widthPad_1: \(widthPad_1), heightPad_1: \(heightPad_1),
+              widthPhoneLandscape_1: \(widthPhoneLandscape_1), heightPhoneLandscape_1: \(heightPhoneLandscape_1),
+              widthPhonePortrait_1: \(widthPhonePortrait_1), heightPhonePortrait_1: \(heightPhonePortrait_1),
+              widthPad_2: \(widthPad_2), heightPad_2: \(heightPad_2),
+              widthPhoneLandscape_2: \(widthPhoneLandscape_2), heightPhoneLandscape_2: \(heightPhoneLandscape_2),
+              widthPhonePortrait_2: \(widthPhonePortrait_2), heightPhonePortrait_2: \(heightPhonePortrait_2))
+}
+"""
+        
+        print("")
+        print(output)
+        print("")
+        
+    }
     
     static func getIconPackSlice(iconSet: IconSet) -> AnyTextIcon {
         
