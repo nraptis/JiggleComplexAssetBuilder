@@ -105,7 +105,7 @@ class MeasureTool {
             .phoneLandscape0LinesLightDisabled,
             .phonePortrait0LinesLightDisabled,
             
-                .pad1LineDark,
+            .pad1LineDark,
             .phoneLandscape1LineDark,
             .phonePortrait1LineDark,
             .pad1LineLight,
@@ -118,7 +118,7 @@ class MeasureTool {
             .phoneLandscape1LineLightDisabled,
             .phonePortrait1LineLightDisabled,
             
-                .pad2LinesDark,
+            .pad2LinesDark,
             .phoneLandscape2LinesDark,
             .phonePortrait2LinesDark,
             .pad2LinesLight,
