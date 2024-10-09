@@ -88,7 +88,16 @@ class MeasureTool {
         looseConvertibleLogAsset(prefix: prefix, name: name, asset: asset)
     }
     
-    
+    static func framedLongBuildAsset(prefix: String, name: String) {
+        let classifications = longClassifications()
+        let scales = getScales()
+        let asset = getAsset(prefix: prefix,
+                             name: name,
+                             classifications: classifications,
+                             scales: scales)
+        export(asset: asset)
+        framedLongLogAsset(prefix: prefix, name: name, asset: asset)
+    }
     
     static func convertibleClassifications() -> [Classification] {
         let classifications: [Classification] = [
@@ -130,6 +139,24 @@ class MeasureTool {
             .pad2LinesLightDisabled,
             .phoneLandscape2LinesLightDisabled,
             .phonePortrait2LinesLightDisabled,
+        ]
+        return classifications
+    }
+    
+    static func longClassifications() -> [Classification] {
+        let classifications: [Classification] = [
+            .pad0LinesDark,
+            .phoneLandscape0LinesDark,
+            .phonePortrait0LinesDark,
+            .pad0LinesLight,
+            .phoneLandscape0LinesLight,
+            .phonePortrait0LinesLight,
+            .pad0LinesDarkDisabled,
+            .phoneLandscape0LinesDarkDisabled,
+            .phonePortrait0LinesDarkDisabled,
+            .pad0LinesLightDisabled,
+            .phoneLandscape0LinesLightDisabled,
+            .phonePortrait0LinesLightDisabled,
         ]
         return classifications
     }
@@ -343,6 +370,47 @@ static var \(variableName): LooseConvertibleIconPack {
         print(output)
         print("")
         
+    }
+    
+    static func framedLongLogAsset(prefix: String,
+                                          name: String,
+                                   asset: Asset) {
+        
+        guard let iconSetPad_0 = asset.getIconSet(classification: .pad0LinesDark) else {
+            fatalError("iconSetPad_0 doesn't exist")
+        }
+        
+        guard let iconSetPhoneLandscape_0 = asset.getIconSet(classification: .phoneLandscape0LinesDark) else {
+            fatalError("iconSetPhoneLandscape_0 doesn't exist")
+        }
+        
+        guard let iconSetPhonePortrait_0 = asset.getIconSet(classification: .phonePortrait0LinesDark) else {
+            fatalError("iconSetPhonePortrait_0 doesn't exist")
+        }
+        
+        let widthPad_0 = iconSetPad_0.getWidth1()
+        let heightPad_0 = iconSetPad_0.getHeight1()
+        
+        let widthPhonePortrait_0 = iconSetPhonePortrait_0.getWidth1()
+        let heightPhonePortrait_0 = iconSetPhonePortrait_0.getHeight1()
+        
+        let widthPhoneLandscape_0 = iconSetPhoneLandscape_0.getWidth1()
+        let heightPhoneLandscape_0 = iconSetPhoneLandscape_0.getHeight1()
+        
+        let variableName = snakeToCamel(string: name)
+        
+        let output = """
+static var \(variableName): FramedLongIconPack {
+    Self.build(prefix: "\(prefix)",
+               name: "\("\(name)")",
+               widthPad_0: \(widthPad_0), heightPad_0: \(heightPad_0),
+               widthPhoneLandscape_0: \(widthPhoneLandscape_0), heightPhoneLandscape_0: \(heightPhoneLandscape_0),
+               widthPhonePortrait_0: \(widthPhonePortrait_0), heightPhonePortrait_0: \(heightPhonePortrait_0))
+}
+"""
+        print("")
+        print(output)
+        print("")
     }
     
     static func getIconPackSlice(iconSet: IconSet) -> AnyTextIcon {
