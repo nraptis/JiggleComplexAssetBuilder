@@ -27,8 +27,8 @@ struct ContentView: View {
             //strings.append("mode_switch_jelly")
             
             
-            MeasureTool.framedLongBuildAsset(prefix: "accessory", name: "lock")
-            MeasureTool.framedLongBuildAsset(prefix: "accessory", name: "uncolored_lock")
+            //MeasureTool.framedLongBuildAsset(prefix: "accessory", name: "lock")
+            //MeasureTool.framedLongBuildAsset(prefix: "accessory", name: "uncolored_lock")
             
             //accessory_lock_pad_0l_dark_1_0.png
             //accessory_uncolored_lock_pad_2l_dark_disabled_3_0.png
@@ -37,6 +37,8 @@ struct ContentView: View {
             
             //MeasureTool.framedConvertibleBuildAsset(prefix: "framed", name: "test_arrow_left")
             //MeasureTool.framedConvertibleBuildAsset(prefix: "framed", name: "test_arrow_right")
+            
+            MeasureTool.framedConvertibleBuildAsset(prefix: "framed", name: "guides")
             
             //MeasureTool.framedConvertibleBuildAsset(prefix: "framed", name: "menu_a")
             //MeasureTool.framedConvertibleBuildAsset(prefix: "framed", name: "menu_b")
