@@ -33,12 +33,32 @@ struct ContentView: View {
             //accessory_lock_pad_0l_dark_1_0.png
             //accessory_uncolored_lock_pad_2l_dark_disabled_3_0.png
             
+            MeasureTool.framedConvertibleBuildAsset(prefix: "loose", name: "rotate_right_a")
+            MeasureTool.framedConvertibleBuildAsset(prefix: "loose", name: "rotate_right_b")
+            MeasureTool.framedConvertibleBuildAsset(prefix: "loose", name: "rotate_left_a")
+            MeasureTool.framedConvertibleBuildAsset(prefix: "loose", name: "rotate_left_b")
             
+            //MeasureTool.looseConvertibleBuildAsset(prefix: "", name: "undo")
+            //MeasureTool.looseConvertibleBuildAsset(prefix: "loose", name: "redo")
             
             //MeasureTool.framedConvertibleBuildAsset(prefix: "framed", name: "test_arrow_left")
             //MeasureTool.framedConvertibleBuildAsset(prefix: "framed", name: "test_arrow_right")
             
-            MeasureTool.framedConvertibleBuildAsset(prefix: "framed", name: "guides")
+            //MeasureTool.framedConvertibleBuildAsset(prefix: "framed", name: "jiggle_center_b")
+            //MeasureTool.framedConvertibleBuildAsset(prefix: "framed", name: "jiggle_center_a")
+            
+            
+            //MeasureTool.framedConvertibleBuildAsset(prefix: "framed", name: "wolf_view")
+            //MeasureTool.framedConvertibleBuildAsset(prefix: "framed", name: "make_guide")
+            //MeasureTool.framedConvertibleBuildAsset(prefix: "framed", name: "draw_jiggle")
+            //MeasureTool.framedConvertibleBuildAsset(prefix: "framed", name: "make_jiggle")
+            
+            
+            //MeasureTool.framedConvertibleBuildAsset(prefix: "framed", name: "jiggle_a")
+            //MeasureTool.framedConvertibleBuildAsset(prefix: "framed", name: "jiggle_b")
+            //MeasureTool.framedConvertibleBuildAsset(prefix: "framed", name: "points_a")
+            //MeasureTool.framedConvertibleBuildAsset(prefix: "framed", name: "points_b")
+            
             
             //MeasureTool.framedConvertibleBuildAsset(prefix: "framed", name: "menu_a")
             //MeasureTool.framedConvertibleBuildAsset(prefix: "framed", name: "menu_b")
