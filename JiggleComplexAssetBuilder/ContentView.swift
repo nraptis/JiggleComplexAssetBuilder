@@ -33,10 +33,21 @@ struct ContentView: View {
             //accessory_lock_pad_0l_dark_1_0.png
             //accessory_uncolored_lock_pad_2l_dark_disabled_3_0.png
             
-            MeasureTool.framedConvertibleBuildAsset(prefix: "loose", name: "rotate_right_a")
-            MeasureTool.framedConvertibleBuildAsset(prefix: "loose", name: "rotate_right_b")
-            MeasureTool.framedConvertibleBuildAsset(prefix: "loose", name: "rotate_left_a")
-            MeasureTool.framedConvertibleBuildAsset(prefix: "loose", name: "rotate_left_b")
+            //MeasureTool.framedConvertibleBuildAsset(prefix: "framed", name: "mag_glass")
+            //MeasureTool.framedConvertibleBuildAsset(prefix: "framed", name: "stereoscopic")
+            MeasureTool.framedConvertibleBuildAsset(prefix: "framed", name: "dark_mode_a")
+            MeasureTool.framedConvertibleBuildAsset(prefix: "framed", name: "dark_mode_b")
+            
+            
+            //MeasureTool.framedConvertibleBuildAsset(prefix: "framed", name: "guide_centers_a")
+            //MeasureTool.framedConvertibleBuildAsset(prefix: "framed", name: "guide_centers_b")
+            //MeasureTool.framedConvertibleBuildAsset(prefix: "framed", name: "guide_centers_c")
+            //MeasureTool.framedConvertibleBuildAsset(prefix: "framed", name: "guide_centers_d")
+            
+            //MeasureTool.framedConvertibleBuildAsset(prefix: "loose", name: "delete_bin_b")
+            //MeasureTool.framedConvertibleBuildAsset(prefix: "loose", name: "rotate_left_a")
+            //MeasureTool.framedConvertibleBuildAsset(prefix: "loose", name: "rotate_left_b")
+            
             
             //MeasureTool.looseConvertibleBuildAsset(prefix: "", name: "undo")
             //MeasureTool.looseConvertibleBuildAsset(prefix: "loose", name: "redo")
