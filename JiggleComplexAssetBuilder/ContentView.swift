@@ -27,6 +27,16 @@ struct ContentView: View {
             //strings.append("mode_switch_jelly")
             
             
+            //MeasureTool.framedLongBuildAsset(prefix: "framed", name: "play")
+            //MeasureTool.framedLongBuildAsset(prefix: "framed", name: "pause")
+            
+            
+            MeasureTool.looseConvertibleBuildAsset(prefix: "loose", name: "frame_prev_a")
+            MeasureTool.looseConvertibleBuildAsset(prefix: "loose", name: "frame_prev_b")
+            MeasureTool.looseConvertibleBuildAsset(prefix: "loose", name: "frame_next_a")
+            MeasureTool.looseConvertibleBuildAsset(prefix: "loose", name: "frame_next_b")
+            
+            
             //MeasureTool.framedLongBuildAsset(prefix: "accessory", name: "lock")
             //MeasureTool.framedLongBuildAsset(prefix: "accessory", name: "uncolored_lock")
             
@@ -35,8 +45,9 @@ struct ContentView: View {
             
             //MeasureTool.framedConvertibleBuildAsset(prefix: "framed", name: "mag_glass")
             //MeasureTool.framedConvertibleBuildAsset(prefix: "framed", name: "stereoscopic")
-            MeasureTool.framedConvertibleBuildAsset(prefix: "framed", name: "dark_mode_a")
-            MeasureTool.framedConvertibleBuildAsset(prefix: "framed", name: "dark_mode_b")
+            //MeasureTool.framedConvertibleBuildAsset(prefix: "framed", name: "dark_mode_a")
+            //MeasureTool.framedConvertibleBuildAsset(prefix: "framed", name: "dark_mode_b")
+            
             
             
             //MeasureTool.framedConvertibleBuildAsset(prefix: "framed", name: "guide_centers_a")
